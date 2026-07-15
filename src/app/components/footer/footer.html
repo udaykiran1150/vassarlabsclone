@@ -1,1 +1,210 @@
-<p>footer works!</p>
+<footer class="bg-[#0d4b63] text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+            <!-- Platforms -->
+
+            <div>
+
+                <h2 class="text-4xl font-bold">
+                    Platforms
+                </h2>
+
+                <div class="w-12 h-1 bg-orange-500 my-5"></div>
+
+                <ul class="space-y-3 text-gray-300">
+
+                    @for(item of platforms;track item){
+
+                    <li class="hover:text-white cursor-pointer transition">
+                        {{item}}
+                    </li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            <!-- Industries -->
+
+            <div>
+
+                <h2 class="text-4xl font-bold">
+                    Industries
+                </h2>
+
+                <div class="w-12 h-1 bg-orange-500 my-5"></div>
+
+                <ul class="space-y-3 text-gray-300">
+
+                    @for(item of industries;track item){
+
+                    <li class="hover:text-white cursor-pointer">
+                        {{item}}
+                    </li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            <!-- Resources -->
+
+            <div>
+
+                <h2 class="text-4xl font-bold">
+                    Resources
+                </h2>
+
+                <div class="w-12 h-1 bg-orange-500 my-5"></div>
+
+                <ul class="space-y-3 text-gray-300">
+
+                    @for(item of resources;track item){
+
+                    <li class="hover:text-white cursor-pointer">
+                        {{item}}
+                    </li>
+
+                    }
+
+                </ul>
+
+                <h2 class="text-4xl font-bold mt-10">
+                    Useful Links
+                </h2>
+
+                <div class="w-12 h-1 bg-orange-500 my-5"></div>
+
+                <ul class="space-y-3 text-gray-300">
+
+                    @for(item of links;track item){
+
+                    <li class="hover:text-white cursor-pointer">
+                        {{item}}
+                    </li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h2 class="text-4xl font-bold">
+                    Get In Touch
+                </h2>
+
+                <div class="w-12 h-1 bg-orange-500 my-5"></div>
+
+                <h4 class="font-semibold text-xl">
+                    Corporate Head Office
+                </h4>
+
+                <div class="flex gap-4 mt-4 text-gray-300">
+
+                    <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
+
+                    <p>
+                        5th Floor, Tower 9, Mindspace IT Park,
+                        Madhapur Hyderabad,
+                        Telangana, India - 500081
+                    </p>
+
+                </div>
+
+                <h4 class="font-semibold text-xl mt-8">
+                    Branch Office
+                </h4>
+
+                <div class="flex gap-4 mt-4 text-gray-300">
+
+                    <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
+
+                    <p>
+                        4 Lafayette Pl,
+                        Woburn,
+                        MA, USA - 01801
+                    </p>
+
+                </div>
+
+                <h4 class="font-semibold text-xl mt-10 mb-5">
+                    Social Media
+                </h4>
+
+                <div class="flex gap-4">
+
+                    <a
+                        class="w-12 h-12 rounded-full bg-[#0077b5] flex items-center justify-center hover:scale-110 transition">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a
+                        class="w-12 h-12 rounded-full bg-[#1877f2] flex items-center justify-center hover:scale-110 transition">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a
+                        class="w-12 h-12 rounded-full bg-[#1DA1F2] flex items-center justify-center hover:scale-110 transition">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                    <a
+                        class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center hover:scale-110 transition">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="border-t border-white/10 mt-16"></div>
+
+        <!-- Bottom Footer -->
+
+        <div class="py-10 grid lg:grid-cols-2 gap-10 items-center">
+
+            <div>
+
+                <img
+                    src="assets/logo.png"
+                    class="h-16"
+                    alt="logo">
+
+            </div>
+
+            <div class="text-center lg:text-left text-gray-300 leading-8">
+
+                At Vassar Labs we make innovation fall into action and create
+                solutions that matter to people. We are passionately working
+                towards a sustainable future by harnessing smart technologies to
+                build climate resilient solutions for water, agriculture,
+                power, land and disaster management.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

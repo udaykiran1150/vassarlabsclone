@@ -1,23 +1,65 @@
-<div class="flex justify-between  items-center bg-violet-950 p-3">
-    <img src="https://vassarlabs.com/wp-content/uploads/2024/06/Climate-logo-2048x459.webp" alt="" class="w-17 h-10">
-    <div>
-        <ul class="flex justify-between gap-5 text-white font-medium hover:cursor-pointer">
-            <li>
-                Water tech
-            </li>
-            <li> Agri tech</li>
-            <li>Disaster</li>
-            <li>Platform</li>
-            <li>Industry</li>
-            <li>Resources</li>
-            <li>Company</li>
+<nav class="bg-[#103E52] w-full">
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+
+
+        <img src="https://vassarlabs.com/wp-content/uploads/2024/06/Climate-logo-2048x459.webp" alt="Logo"
+            class="w-24 sm:w-32 lg:w-40 h-auto hover:cursor-pointer" routerLink="home">
+
+        <ul class="hidden lg:flex items-center gap-8 text-white font-medium">
+
+            <li routerLink="watertech" class=" cursor-pointer">Water Tech</li>
+            <li routerLink="agritech" class=" cursor-pointer">Agri Tech</li>
+            <li routerLink="disaster" class=" cursor-pointer">Disaster</li>
+            <li routerLink="platform" class=" cursor-pointer">Platform</li>
+            <li routerLink="industry" class=" cursor-pointer">Industry</li>
+            <li routerLink="resources" class=" cursor-pointer">Resources</li>
+            <li routerLink="company" class=" cursor-pointer">Company</li>
+
         </ul>
+
+
+        <button
+            class="hidden lg:block rounded-full bg-white px-6 py-2 border-2 border-amber-400 hover:bg-amber-400 hover:text-white transition">
+            Request Demo
+        </button>
+
+        <button class="lg:hidden text-white text-2xl" (click)="toggleMenu()">
+
+            <i class="fa-solid" [class.fa-bars]="!isMenuOpen" [class.fa-xmark]="isMenuOpen"></i>
+
+        </button>
+
     </div>
 
-    <div
-        class="flex items-center justify-center rounded-3xl bg-white pl-7 pr-7 pt-2 pb-2 border-3 border-amber-300 hover:cursor-pointer">
 
-        <h3>Request Demo</h3>
+
+    @if(isMenuOpen){
+
+    <div class="lg:hidden bg-[#103E52] border-t border-white/20">
+
+        <ul class="flex flex-col text-white">
+
+            <li routerLink="watertech" class="px-6 py-4 hover:bg-[#15566f]">Water Tech</li>
+            <li routerLink="agritech" class="px-6 py-4 hover:bg-[#15566f]">Agri Tech</li>
+            <li routerLink="disaster" class="px-6 py-4 hover:bg-[#15566f]">Disaster</li>
+            <li routerLink="platform" class="px-6 py-4 hover:bg-[#15566f]">Platform</li>
+            <li routerLink="industry" class="px-6 py-4 hover:bg-[#15566f]">Industry</li>
+            <li routerLink="resources" class="px-6 py-4 hover:bg-[#15566f]">Resources</li>
+            <li routerLink="company" class="px-6 py-4 hover:bg-[#15566f]">Company</li>
+
+        </ul>
+
+        <div class="p-6">
+
+            <button class="w-full rounded-full bg-white py-3 border-2 border-amber-400">
+                Request Demo
+            </button>
+
+        </div>
+
     </div>
 
-</div>
+    }
+
+</nav>
